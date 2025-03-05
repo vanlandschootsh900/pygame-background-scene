@@ -8,6 +8,8 @@ GREEN = (0, 255, 0)
 BLUE = (0, 0, 255)
 PURPLE = (255, 0 , 255)
 GRAY = (128,128,128)
+SKY_BLUE = (135,206,235)
+YELLOW = (255,255,0)
 # Game window dimensions
 WINDOW_WIDTH = 800
 WINDOW_HEIGHT = 600
