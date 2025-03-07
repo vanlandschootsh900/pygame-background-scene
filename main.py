@@ -42,7 +42,7 @@ def sun(screen, pos):
     pygame.draw.circle(screen, config.YELLOW, pos, 75)
 
 
-#def guy(screen,start, end,right,left, arms,arme):
+#Add 50 to the START Numbers x/y to get the END X/Y
 def guy(screen, start_x, start_y, end_x, end_y):
     pygame.draw.line(screen, config.BLACK, (start_x,start_y),(end_x,end_y),5)
     
@@ -51,12 +51,6 @@ def guy(screen, start_x, start_y, end_x, end_y):
     pygame.draw.line(screen,config.BLACK, (end_x,end_y), (45+start_x,80+start_y), 5)
     pygame.draw.line(screen,config.BLACK,((-10)+start_x,50+start_y) , (30+end_x,(-50)+end_y) ,5)
     pygame.draw.circle(screen, config.BLACK,(start_x,start_y) ,15)
-
-
-    # pygame.draw.line(screen,config.BLACK,end, left,5)
-    # pygame.draw.line(screen,config.BLACK,end,right,5)
-    # pygame.draw.line(screen,config.BLACK,arms,arme,5)
-    # pygame.draw.circle(screen, config.BLACK, start ,15)
 
 
 
@@ -84,7 +78,8 @@ def main():
         sun(screen, (100,100))
 
         guy(screen,200,500,250,550)
-        #guy(screen,(200,500),(250,550),(245,580),(280,550),(190,550),(240,500))
+        
+       
 
         draw_text(screen,'sun',text_font1,config.PURPLE,80,75)
         draw_text(screen,'CLOUD',text_font1,config.PURPLE,460,380)
